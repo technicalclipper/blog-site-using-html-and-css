@@ -1,0 +1,268 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 40px;
+    gap:10px;
+    margin-bottom:40px;
+}
+header>h1{
+    font-weight:bold;
+    font-size: 50px;
+    margin:0;
+}
+header>p{
+    font-weight: lighter;
+    font-size: 20px;
+    margin:0;
+}
+header>p>span{
+    background-color: black;
+    color:white;
+}
+/*    grid-template-columns: 931px;
+    grid-template-rows: 552px 552px;
+    
+    should set height and width for grid containers so we can use 1fr 1fr fractional values and if am using images inside grid cells use max-width:100% and height:auto
+    
+    */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:50px;
+    width:55%;
+    height:100%;
+
+}
+.grid>div{
+    max-height: 552px;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.main{
+    display: flex;  
+    flex-wrap: wrap;
+    gap:50px;
+    width:100%;
+    height:auto;
+    justify-content:center;
+}
+
+.sidegrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;  /* give auto so automatically adjust according to width and height is specified */
+    gap:40.3333px;
+    width:25%;
+    height:105%;
+
+
+     /* to get breakboint to wrap flex to work*/
+
+
+}
+.m-image{
+    width:100%;
+    height: 50%;
+}
+
+.sidegrid>div{
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.grid-info{
+    padding-left:20px;
+    height:30%;
+    font-weight: lighter;
+    font-size: 18px;
+
+    
+}
+
+.info-head{
+    font-size: 30px;
+    margin-top:20px;
+    margin-bottom:0;
+}
+.info-base{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 0;
+    margin-top:15px;
+}
+.button{
+    color:black;
+    background-color: white;
+    border:0.5px solid grey;
+    font-weight: bold;
+    width:15%;
+    position:relative;
+    left:20px;
+    font-size:18px;
+}
+
+.button:hover{
+    background-color: lightgray;
+}
+
+.com{ 
+    position: relative;
+    left:67%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.s-image{
+    width:100%;
+    height:65%;
+}
+.s1head{
+    padding-left: 3%;
+    font-size: 25px;
+    margin-bottom:0;
+    margin-top:10px;
+}
+.s1para{
+    padding-left:3%;
+    font-size:18px;
+}
+.s2gridtopic{
+    width:100%;
+    height:16%;
+    background-color: lightgrey;
+    font-size:25px;
+    display: flex;
+    align-items: center;
+}
+.s2gridhead{
+    position: relative;
+    left:3%;
+}
+.s2image{
+    height:70%;
+    width:20%;
+    float:left;
+
+}
+.s2infogrid{
+    width:100%;
+    height:25%;
+    margin:0;
+    border-bottom: 1px solid grey;
+}
+
+.s2infogrid:hover{
+    background-color: lightgray;
+}
+
+.s2innergrid{
+    height:84%;
+    width:100%;
+    margin:0;
+    
+
+}
+.s2innertitle{
+    margin:0;
+    position: relative;
+    left:4%;
+}
+.s2innercontent{
+    margin:0;
+    position: relative;
+    left:4%;
+}
+.s2lastgrid{
+    margin:0;
+    width:100%;
+    height:100%;
+    padding-left:3%;
+    padding-top:3%;
+}
+
+.s3title{
+    width:100%;
+    height:20%;
+    background-color: lightgrey;
+    font-size:25px;
+    display: flex;
+    align-items: center;
+}
+.s3head{
+    position: relative;
+    left:3%;
+    font-size:25px;
+}
+
+.s3content{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height:80%;
+    width:100%;
+    gap:1%;
+    justify-content: center;
+    align-content: center;
+}
+
+.s3inner{
+    padding:5px 20px;
+    background-color: lightgrey;
+    text-align: center;
+    margin-bottom: 2%;
+    transition: padding 0.3s;
+}
+.s3inner:hover{
+    background-color: black;
+    color:white;
+    padding:10px 30px;
+}
+
+footer{
+    background-color: grey;
+    width:100%;
+    margin-top:50px;
+    height:20vh;
+
+}
+
+footer>button{
+    color:white;
+    background-color: black;
+    padding:15px 30px;
+    margin-top:25px;
+    margin-left:20px;
+    border:none;
+}
+
+footer>button:hover{
+    color:black;
+    background-color: lightgrey;
+    padding:15px 30px;
+    margin-top:25px;
+    margin-left:20px;
+}
+body{
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+}
+
+@media (max-width: 767px) {
+    .main{
+        width:100%;
+    
+    }
+    .grid{
+        min-width:300px;
+    }
+    .sidegrid{
+        min-width:200px;
+    }
+}
+
+
+
+
+  

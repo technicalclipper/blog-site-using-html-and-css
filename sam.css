@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    width: 55%; 
+    height: 40%; 
+}
+
+.grid > div {
+    background-color: red;
+    height: 100%; /* Add this to make the grid cells take up the full height */
+} 
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
